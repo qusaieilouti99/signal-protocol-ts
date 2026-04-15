@@ -1,6 +1,6 @@
 {
   "name": "signal-protocol-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Merged TypeScript Signal protocol package with compatibility-preserving curve, protobuf, and session modules.",
   "license": "GPL-3.0-only",
   "repository": {
