@@ -68,6 +68,7 @@ export class GroupCipher {
 
         const ciphertext = await Internal.crypto.encrypt(keys[0], buffer, keys[2].slice(0, 16))
 
+        // Receivers verify this signature against the current sender-key chain before decrypting.
         const signature = await Internal.crypto.Ed25519Sign(
             session.currentRatchet!.signatureKeyPair!.privKey,
             ciphertext

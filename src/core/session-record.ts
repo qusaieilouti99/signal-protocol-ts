@@ -213,6 +213,7 @@ export class SessionRecord implements RecordType {
     archiveCurrentState(): void {
         const open_session = this.getOpenSession()
         if (open_session !== undefined) {
+            // Closed sessions remain serialized so older local state stays readable without migration.
             open_session.indexInfo.closed = Date.now()
             this.updateSessionState(open_session)
         }

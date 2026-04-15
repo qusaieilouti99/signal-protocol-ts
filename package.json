@@ -47,8 +47,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "jest --runInBand",
-    "prepare": "npm run build"
+    "test": "jest --runInBand"
   },
   "dependencies": {
     "base64-js": "^1.5.1",

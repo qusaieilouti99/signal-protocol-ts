@@ -94,6 +94,7 @@ export class SessionCipher {
         msg.ciphertext = new Uint8Array(ciphertext)
         const encodedMsg = WhisperMessage.encode(msg).finish()
 
+        // The MAC framing matches the legacy wire format used by already-released devices.
         const macInput = new Uint8Array(encodedMsg.byteLength + 33 * 2 + 1)
         macInput.set(new Uint8Array(ourIdentityKey.pubKey))
         macInput.set(new Uint8Array(session.indexInfo.remoteIdentityKey), 33)

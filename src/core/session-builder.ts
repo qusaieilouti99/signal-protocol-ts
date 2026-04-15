@@ -25,6 +25,7 @@ export class SessionBuilder {
     }
 
     processPreKeyJob = async (device: DeviceType): Promise<SessionType> => {
+        // Trust is checked before bundle signature verification so persisted identity decisions win.
         const trusted = await this.storage.isTrustedIdentity(
             this.getRemoteIdentityIdentifier(),
             device.identityKey,
@@ -222,8 +223,7 @@ export class SessionBuilder {
             sharedSecret[i] = 0xff
         }
 
-        // X3DH Section 3.3. https://signal.org/docs/specifications/x3dh/
-        // We'll handle the possible one-time prekey below
+        // X3DH Section 3.3. The shared-secret slot layout is protocol-visible and must stay stable.
         const ecRes = await Promise.all([
             Internal.crypto.ECDHE(IKa, SPKb.privKey),
             Internal.crypto.ECDHE(EKa, IKb.privKey),
