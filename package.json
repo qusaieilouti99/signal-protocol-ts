@@ -5,7 +5,7 @@
   "license": "GPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qusaieilouti99/signal-protocol-ts"
+    "url": "git+https://github.com/qusaieilouti99/signal-protocol-ts.git"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -47,7 +47,11 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "publish:dry-run": "npm publish --dry-run --access public"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "base64-js": "^1.5.1",

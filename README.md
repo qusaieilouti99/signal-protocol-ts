@@ -42,3 +42,15 @@ npm install
 npm test
 npm run build
 ```
+
+## Bun / Git Installs
+
+`dist/` is committed to the repository and the package does not rely on dependency lifecycle scripts. That keeps Git-based installs usable from Bun without trusting package scripts.
+
+## Publish
+
+The package name `signal-protocol-ts` is currently available on npm. When npm auth is configured, you can verify the artifact with:
+
+```bash
+npm run publish:dry-run
+```
