@@ -1,0 +1,24 @@
+{
+  "identityKeyPair": {
+    "privKeyHex": "70076d0a7318a57d3c16c17251b26645df4c2f87ebc0992ab177fba51db92c6a",
+    "pubKeyHex": "058520f0098930a754748b7ddcb43ef75a0dbf3a0d26381af4eba4a98eaa9b4e6a"
+  },
+  "preKey": {
+    "keyId": 42,
+    "publicKeyHex": "05de9edb7d7b7dc1b4d35b61c2ece435373f8343c85b78674dadfc7e146f882b4f"
+  },
+  "signedPreKey": {
+    "keyId": 99,
+    "publicKeyHex": "0555f1bfede27b6a03e0dd389478ffb01462e5c52dbbac32cf870f00af1ed9af3a",
+    "signatureHex": "8ca268b36b8e029d1afea53bd69071d1243a2fe303dc3980e91f19c6a75ee14ca7219c3d720ecc659755af6abb385c4b7cde16dc2f244c34fc44c3e759df898f"
+  },
+  "sessionRecordBase64": "eyJzZXNzaW9ucyI6eyJcdTAwMDXChSDDsFx0wokwwqdUdMKLfcOcwrQ+w7daXHLCvzpcciY4XHUwMDFhw7TDq8KkwqnCjsKqwptOaiI6eyJpbmRleEluZm8iOnsiY2xvc2VkIjotMSwicmVtb3RlSWRlbnRpdHlLZXkiOiJCVlh4diszaWUyb0Q0TjA0bEhqL3NCUmk1Y1V0dTZ3eXo0Y1BBSzhlMmE4NiIsImJhc2VLZXkiOiJCWVVnOEFtSk1LZFVkSXQ5M0xRKzkxb052em9OSmpnYTlPdWtxWTZxbTA1cSIsImJhc2VLZXlUeXBlIjoxfSwicmVnaXN0cmF0aW9uSWQiOjEzMzcsImN1cnJlbnRSYXRjaGV0Ijp7InJvb3RLZXkiOiJBQUVDQXdRRkJnY0lDUW9MREEwT0R4QVJFaE1VRlJZWEdCa2FHeHdkSGg4PSIsImVwaGVtZXJhbEtleVBhaXIiOnsicHViS2V5IjoiQmQ2ZTIzMTdmY0cwMDF0aHd1emtOVGMvZzBQSVczaG5UYTM4ZmhSdmlDdFAiLCJwcml2S2V5IjoiV0tzSWZtSktpa3Q1NFgrTGc0QU81bTg3c1NrbUdMYjlIQytMSi8rSTRHcz0ifSwibGFzdFJlbW90ZUVwaGVtZXJhbEtleSI6IkJWWHh2KzNpZTJvRDROMDRsSGovc0JSaTVjVXR1Nnd5ejRjUEFLOGUyYTg2IiwicHJldmlvdXNDb3VudGVyIjozfSwicGVuZGluZ1ByZUtleSI6eyJiYXNlS2V5IjoiQllVZzhBbUpNS2RVZEl0OTNMUSs5MW9OdnpvTkpqZ2E5T3VrcVk2cW0wNXEiLCJwcmVLZXlJZCI6NDIsInNpZ25lZEtleUlkIjo5OX0sIm9sZFJhdGNoZXRMaXN0IjpbXSwiY2hhaW5zIjp7IkJZVWc4QW1KTUtkVWRJdDkzTFErOTFvTnZ6b05KamdhOU91a3FZNnFtMDVxIjp7ImNoYWluVHlwZSI6MSwiY2hhaW5LZXkiOnsia2V5IjoiSHg0ZEhCc2FHUmdYRmhVVUV4SVJFQThPRFF3TENna0lCd1lGQkFNQ0FRQT0iLCJjb3VudGVyIjo3fSwibWVzc2FnZUtleXMiOnsiNyI6InFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcW89In19fX19LCJ2ZXJzaW9uIjoidjEifQ==",
+  "senderKey": {
+    "senderKeyVersion": 17,
+    "chainKey": "AQIDBA==",
+    "signatureKey": "BYUg8AmJMKdUdIt93LQ+91oNvzoNJjga9OukqY6qm05q",
+    "previousCounter": 9,
+    "previousChainSignatureKey": "Bd6e2317fcG001thwuzkNTc/g0PIW3hnTa38fhRviCtP"
+  },
+  "pushMessageContentHex": "0a13636f6d7061746962696c6974792d636865636b"
+}

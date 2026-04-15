@@ -1,0 +1,66 @@
+{
+  "name": "signal-protocol-ts",
+  "version": "0.1.0",
+  "description": "Merged TypeScript Signal protocol package with compatibility-preserving curve, protobuf, and session modules.",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qusaieilouti99/signal-protocol-ts"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./helpers": {
+      "types": "./dist/helpers.d.ts",
+      "require": "./dist/helpers.js",
+      "default": "./dist/helpers.js"
+    },
+    "./curve": {
+      "types": "./dist/curve/index.d.ts",
+      "require": "./dist/curve/index.js",
+      "default": "./dist/curve/index.js"
+    },
+    "./proto": {
+      "types": "./dist/proto/index.d.ts",
+      "require": "./dist/proto/index.js",
+      "default": "./dist/proto/index.js"
+    },
+    "./runtime": {
+      "types": "./dist/runtime/index.d.ts",
+      "require": "./dist/runtime/index.js",
+      "default": "./dist/runtime/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "jest --runInBand",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "base64-js": "^1.5.1",
+    "long": "^5.3.2",
+    "protobufjs": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/emscripten": "^1.39.17",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.8.3"
+  }
+}
