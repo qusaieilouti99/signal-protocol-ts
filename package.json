@@ -1,6 +1,6 @@
 {
   "name": "signal-protocol-ts",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Merged TypeScript Signal protocol package with compatibility-preserving curve, protobuf, and session modules.",
   "license": "GPL-3.0-only",
   "repository": {
@@ -37,8 +37,32 @@
     },
     "./package.json": "./package.json"
   },
+  "typesVersions": {
+    "*": {
+      "helpers": [
+        "./helpers.d.ts"
+      ],
+      "curve": [
+        "./curve.d.ts"
+      ],
+      "proto": [
+        "./proto.d.ts"
+      ],
+      "runtime": [
+        "./runtime.d.ts"
+      ]
+    }
+  },
   "files": [
     "dist/**/*",
+    "helpers.js",
+    "helpers.d.ts",
+    "curve.js",
+    "curve.d.ts",
+    "proto.js",
+    "proto.d.ts",
+    "runtime.js",
+    "runtime.d.ts",
     "README.md",
     "CHANGELOG.md",
     "LICENSE"

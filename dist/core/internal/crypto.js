@@ -84,11 +84,13 @@ class Crypto {
         return util.uint8ArrayToArrayBuffer(array);
     }
     async encrypt(key, data, iv) {
-        const impkey = await this._webcrypto.subtle.importKey('raw', key, { name: 'AES-CBC' }, false, ['encrypt']);
+        const keyLengthBits = key.byteLength * 8;
+        const impkey = await this._webcrypto.subtle.importKey('raw', key, { name: 'AES-CBC', length: keyLengthBits }, false, ['encrypt']);
         return this._webcrypto.subtle.encrypt({ name: 'AES-CBC', iv: new Uint8Array(iv) }, impkey, data);
     }
     async decrypt(key, data, iv) {
-        const impkey = await this._webcrypto.subtle.importKey('raw', key, { name: 'AES-CBC' }, false, ['decrypt']);
+        const keyLengthBits = key.byteLength * 8;
+        const impkey = await this._webcrypto.subtle.importKey('raw', key, { name: 'AES-CBC', length: keyLengthBits }, false, ['decrypt']);
         return this._webcrypto.subtle.decrypt({ name: 'AES-CBC', iv: new Uint8Array(iv) }, impkey, data);
     }
     async sign(key, data) {
